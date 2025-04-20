@@ -14,7 +14,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
 
 st.title("Loan Approval Prediction")
-st.write("Masukkan informasi berikut untuk memprediksi status pinjaman:")
+st.write("Masukkan informasi yang diperlukan untuk melihat prediksi status pinjaman anda:")
 
 model = pickle.load(open('best_model.pkl', 'rb'))
 
