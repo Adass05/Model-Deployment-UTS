@@ -28,7 +28,7 @@ def preprocess_input(data):
     data['loan_intent'] = label_encoder.fit_transform([data['loan_intent']])[0]
     data['previous_loan_defaults_on_file'] = label_encoder.fit_transform([data['previous_loan_defaults_on_file']])[0]
 
-    data_imputed = imputer.transform([data.values()])
+    data_imputed = imputer.transform(data)
     return data_imputed
 
 person_gender = st.selectbox("Gender", ['Male', 'Female'])
